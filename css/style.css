@@ -29,7 +29,7 @@ p {
 	font-size: 0.8em;
 }
 
-/* fix up font */
+/* fix up font for main body section */
 body
 {
 	background:#4B4B4B;
@@ -60,7 +60,7 @@ h2
 	color:#3F3F3F;
 	font-size:4.25em;
 	margin:.5em 0 .1em;
-	padding-top: 4%;
+	padding-top: 6%;
 }
 
 h3
@@ -87,10 +87,18 @@ section
 	color:#3F3F3F;
 	height:auto;
 	text-align:center;
-	vertical-align:middle
+	vertical-align:middle;
 }
-
 
 #msg {
 	margin-left: 2%;
 }
+
+/* add media queries here */
+@media only screen and (max-width: 499px) {
+    body {
+			min-width:500px;
+    }
+}
+
+
