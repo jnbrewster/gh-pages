@@ -20,8 +20,7 @@ The layout worked perfectly in safari but had excessive space up the top of the 
 ##Second version - vertical layout
 I ended up removing all the page information as it was mostly information about my github projects. Going to the github link would have the same information anyway.
 
-
 ##colors
+I'm still unsure what sort of color theme I'd like to use on the landing page. For the moment I'm using colors that are around my house, colors that are based off [Seoul colors](http://www.seoul.go.kr/v2012/seoul/symbol/color.html).
 
 
-#
