@@ -22,7 +22,8 @@ I ended up removing all the page information as it was mostly information about 
 github projects. I'm going to change the links to projects to a pop-up that shows an
 image and some basic information to checkout on gitgub.
 
-##colors
+##Colors
 I'm still unsure what sort of color theme I'd like to use on the landing page. Initially I was using colors that are around my house, colors that are based off [Seoul colors](http://www.seoul.go.kr/v2012/seoul/symbol/color.html).
 
-
+#Layout 3
+Added a modalDialog to show completed projects. Added git hub links.
