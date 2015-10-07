@@ -1,35 +1,71 @@
 <!DOCTYPE html>
+
 <html lang="en">
-  <head>
+<head>
     <title>Joel's landing page</title>
-
-    <meta name="" content="">
-    <meta name="" content="">
-
+    <meta content="" name="">
+    <meta content="" name="">
     <link href="css/style.css" rel="stylesheet">
+</head>
 
-  </head>
-  <body>
-		<section class="text">
-		<div id="msg"/>
-			<h1>Hello, World!</h1>
-			<p>I'm Joel.</p>
-			<p>I'm a 32 year old dad that loves to study and learn.</p>
-			<p>I love mechanical keyboards, tmux and vim.</p>
-			<p>I'm having a lot of fun with Ruby at the moment.</p>
-		</section>
-		<section class="Projects">
-			<!--TODO: add html popup with project information-->
-			<!--http://foundation.zurb.com/docs/v/2.2.1/reveal.php-->
-			<!--https://www.youtube.com/watch?v=-0c92Ibb4aQ-->
+<body>
+    <section class="text">
+        <div id="msg">
 
-			<h2><a href="https://github.com/jnbrewster?tab=repositories">Projects</a></h2>
-		</section>
+        <h1>Hello, World!</h1>
 
-		<section class="SayHello">
-			<!--TODO: add email address part-->
-			<h2><a href="mailto:j.n.brewster@gmail.com">Say Hi!</a></h2>
-		</section>
+        <p>I'm Joel.</p>
 
-  </body>
+        <p>I'm a 32 year old dad that loves to study and learn.</p>
+
+        <p>I love mechanical keyboards, tmux and vim.</p>
+
+        <p>I'm having a lot of fun with Ruby at the moment.</p>
+    </section>
+
+    <section class="Projects">
+        <!--TODO: add popup modal with project information-->
+
+        <h2><a href="#openModal">Projects</a></h2>
+
+        <div class="modalDialog" id="openModal">
+            <div>
+                <a class="close" href="#close" title="Close">x</a>
+
+                <h3><a href=
+                "https://github.com/jnbrewster?tab=repositories">Github</a></h3>
+
+								<p>All of my hosted files.</p>
+
+                <h3><a href=
+                "https://play.google.com/store/apps/details?id=com.happydad.koreancharacters">
+                Korean Characters</a></h3>
+
+                <p>Learn how to pronounce Korean characters(Hanguel).</p>
+
+                <h3><a href=
+                "https://play.google.com/store/apps/details?id=com.happydad.quickvideo">
+										Quick Video Recorder</a></h3>
+
+                <p>Load up your android video camera with 1 button.</p>
+
+                <h3><a href=
+                "https://play.google.com/store/apps/details?id=com.happydad.lightsaber.app">
+								Lightsaber</a></h3>
+
+								<p>Pretend you have a lighsaber in your phone.</p>
+
+                <h3><a href=
+                "https://play.google.com/store/apps/details?id=com.happydad.monsterscanner.app">
+                Monster Scanner</a></h3>
+
+								<p>Scan for monsters with your phones' camera.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="SayHello">
+        <h2><a href="mailto:j.n.brewster@gmail.com">Say Hi!</a></h2>
+    </section><script src="//code.jquery.com/jquery-1.11.3.min.js"></script> <script src="text/jquery.reveal.js"></script>
+</body>
 </html>
