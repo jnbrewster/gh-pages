@@ -1,3 +1,18 @@
+html,body,address,blockquote,div,
+form,fieldset,caption,
+h1,h2,h3,h4,h5,h6,
+hr,ul,li,ol,ul,
+table,tr,td,th,p,img {
+margin:0;
+padding:0;
+}
+
+img,fieldset {
+	border:none;
+	padding: 1em;
+}
+
+/*start*/
 @-webkit-keyframes typing { from { width: 0 }
     to { width:7.75em; }
 }
@@ -6,18 +21,6 @@
     from { width: 0 }
     to { width:7.75em; }
 }
-
-/*
-@-webkit-keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: #E0BC72; }
-}
-
-@-moz-keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: #E0BC72; }
-}
-*/
 
 a {
 	color:#ECECEC;
@@ -30,7 +33,11 @@ a {
 	transition:         color .3s;
 }
 
-li {
+ul.nav {
+	padding: 0; margin: 0;
+}
+
+ul.nav li {
 	list-style-type: none;
 }
 
@@ -38,17 +45,11 @@ a:hover {
 	color: #96BBDC;
 }
 
-button.hover {
-
-}
-
 p {
-	font-size: 0.8em;
 	color: #fafafa;
 }
 
-body
-{
+body {
 	background:#FAFAFA;
 	height:auto;
 	text-align:center;
@@ -62,52 +63,75 @@ section
 	background:#424242;
 	border-radius:.2em;
 	margin:0 auto 1em;
-	padding-bottom: 2%;
+	padding-bottom: 0.2em;
+	padding-top: 0em;
 }
 
-.project {
-	margin: 2em 0;
-	text-color: #E0BC72;
+.button {
+
 }
 
-.projectHeader
-{
+.button.hover {
+
+}
+
+#project {
+}
+
+h1 {
+	color: #fafafa;
 	text-align:center;
-	font-size:3.45em;
-	margin:.5em 0 .1em;
-	padding-top: 4%;
+	font-size:4.5em;
+	margin:.2em 0 .1em;
 }
 
-.contactHeader
-{
+h2 {
+	color: #fafafa;
 	text-align:center;
-	font-size:2.55em;
-	margin:.5em 0 .1em;
-	padding-top: 4%;
+	font-size:3.5em;
+	margin:.2em 0 .1em;
 }
 
-.animatedHeader {
+h3 {
+	color: #fafafa;
 	text-align:center;
+	font-size:2.0em;
+	margin:.2em 0 .1em;
+
+}
+
+#headerIndex {
 	font-size:3.04em;
-	margin:.5em 0 .1em;
 	width:7.75em;
 	white-space:nowrap;
 	overflow:hidden;
 	border-right: .4em solid #E0BC72;
-	font-family: monospace;
-	-webkit-animation: typing 2s steps(13, end), /* # of steps = # of characters */
-	                    blink-caret 1s step-end infinite;
-	-moz-animation: typing 2s steps(13, end), /* # of steps = # of characters */
-                        blink-caret 1s step-end infinite;
+	-webkit-animation: typing 2s steps(13, end);
+	-moz-animation: typing 2s steps(13, end);
+	padding-bottom: 0.1em;
 }
 
-.staticHeader
+#headerProjects {
+	padding-bottom: 0.1em;
+	border-bottom: 1px solid #fafafa;
+}
+
+#projectHeader
 {
-	color:#E0BC72
 	text-align:center;
-	font-size:3.55em;
-	margin:.5em 0 .1em;
-	padding-top: 3%;
+}
+
+#contactHeader
+{
+	text-align:center;
+}
+
+#staticHeader
+{
+}
+
+.selfPhoto {
+
 }
 
 .text
@@ -142,9 +166,9 @@ section
 	margin:0 auto 1em;
 	z-index: 99999;
 	opacity:0;
-	-webkit-transition: opacity 700ms ease-in;
-	-moz-transition: opacity 700ms ease-in;
-	transition: opacity 700ms ease-in;
+	-webkit-transition: opacity 500ms ease-in;
+	-moz-transition: opacity 500ms ease-in;
+	transition: opacity 500ms ease-in;
 	pointer-events: none;
 }
 
@@ -170,13 +194,13 @@ section
 .close {
 	background: #E0BC72;
 	color: #424242;
-	font-size: 1.4em;
+	font-size: 2.4em;
 	position: absolute;
 	right: 8px;
   text-align: center;
 	top: 0.1px;
 	width: 24px;
-	height: 80px;
+	height: 2.6em;
 	text-decoration: none;
 	-webkit-border-radius: 0px;
 	-moz-border-radius: 0px;
