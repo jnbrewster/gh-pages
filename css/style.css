@@ -30,8 +30,16 @@ a {
 	transition:         color .3s;
 }
 
+li {
+	list-style-type: none;
+}
+
 a:hover {
 	color: #96BBDC;
+}
+
+button.hover {
+
 }
 
 p {
@@ -39,44 +47,12 @@ p {
 	color: #fafafa;
 }
 
-/* fix up font for main body section */
 body
 {
 	background:#FAFAFA;
 	height:auto;
 	text-align:center;
 	font-family: monospace;
-}
-
-h1 {
-	text-align:center;
-	font-size:3.04em;
-	margin:.5em 0 .1em;
-	width:7.75em;
-	white-space:nowrap;
-	overflow:hidden;
-	border-right: .4em solid #E0BC72;
-	font-family: monospace;
-	-webkit-animation: typing 1.5s steps(13, end), /* # of steps = # of characters */
-	                    blink-caret 1s step-end infinite;
-	-moz-animation: typing 1.5s steps(13, end), /* # of steps = # of characters */
-                        blink-caret 1s step-end infinite;
-}
-h2
-{
-	text-align:center;
-	color:#ECECEC;
-	font-size:5.25em;
-	margin:.5em 0 .1em;
-	padding-top: 3%;
-}
-
-h3
-{
-	text-align:center;
-	font-size:3.25em;
-	margin:.5em 0 .1em;
-	padding-top: 4%;
 }
 
 section
@@ -87,6 +63,51 @@ section
 	border-radius:.2em;
 	margin:0 auto 1em;
 	padding-bottom: 2%;
+}
+
+.project {
+	margin: 2em 0;
+	text-color: #E0BC72;
+}
+
+.projectHeader
+{
+	text-align:center;
+	font-size:3.45em;
+	margin:.5em 0 .1em;
+	padding-top: 4%;
+}
+
+.contactHeader
+{
+	text-align:center;
+	font-size:2.55em;
+	margin:.5em 0 .1em;
+	padding-top: 4%;
+}
+
+.animatedHeader {
+	text-align:center;
+	font-size:3.04em;
+	margin:.5em 0 .1em;
+	width:7.75em;
+	white-space:nowrap;
+	overflow:hidden;
+	border-right: .4em solid #E0BC72;
+	font-family: monospace;
+	-webkit-animation: typing 2s steps(13, end), /* # of steps = # of characters */
+	                    blink-caret 1s step-end infinite;
+	-moz-animation: typing 2s steps(13, end), /* # of steps = # of characters */
+                        blink-caret 1s step-end infinite;
+}
+
+.staticHeader
+{
+	color:#E0BC72
+	text-align:center;
+	font-size:3.55em;
+	margin:.5em 0 .1em;
+	padding-top: 3%;
 }
 
 .text
@@ -110,19 +131,20 @@ section
     }
 }
 
+/*Add slide in animation*/
 .modalDialog {
 	position: fixed;
 	top: 0;
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background:#ECECEC;
+	background:#5C5C5C;
 	margin:0 auto 1em;
 	z-index: 99999;
 	opacity:0;
-	-webkit-transition: opacity 400ms ease-in;
-	-moz-transition: opacity 400ms ease-in;
-	transition: opacity 400ms ease-in;
+	-webkit-transition: opacity 700ms ease-in;
+	-moz-transition: opacity 700ms ease-in;
+	transition: opacity 700ms ease-in;
 	pointer-events: none;
 }
 
