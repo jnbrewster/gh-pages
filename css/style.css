@@ -5,6 +5,7 @@ hr,ul,li,ol,ul,
 table,tr,td,th,p,img {
 margin:0;
 padding:0;
+font-size: 1em;
 }
 
 img,fieldset {
@@ -12,7 +13,6 @@ img,fieldset {
 	padding: 1em;
 }
 
-/*start*/
 @-webkit-keyframes typing { from { width: 0 }
     to { width:7.75em; }
 }
@@ -63,8 +63,7 @@ section
 	background:#424242;
 	border-radius:.2em;
 	margin:0 auto 1em;
-	padding-bottom: 0.2em;
-	padding-top: 0em;
+	padding: 0 .2em 0.2em .2em;
 }
 
 .button {
@@ -76,6 +75,7 @@ section
 }
 
 #project {
+	padding-bottom:1em;
 }
 
 h1 {
@@ -147,6 +147,7 @@ h3 {
 	margin-left: 2%;
 }
 
+/*fix up clipping of modal at smaller sizes*/
 /* add media queries here */
 @media only screen and (max-width: 499px) {
     body {
@@ -162,13 +163,14 @@ h3 {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background:#5C5C5C;
+
+	background:#424242;
 	margin:0 auto 1em;
 	z-index: 99999;
 	opacity:0;
-	-webkit-transition: opacity 500ms ease-in;
-	-moz-transition: opacity 500ms ease-in;
-	transition: opacity 500ms ease-in;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
 	pointer-events: none;
 }
 
@@ -181,14 +183,14 @@ h3 {
 .modalDialog > div {
 	width: 500px;
 	position: relative;
-	margin: 0 auto 1em;;
-	border-radius: .4em;
-	padding-bottom: 2%;
-	background:#424242;
+	border-radius: .2em;
+	margin:0 auto 1em;
+	padding: 0 .5em 1em .5em;
+	background:#5C5C5C;
 }
 
 .modalDialog p {
-	font-size: 1em;
+	font-size: 1.2em;
 }
 
 .close {
@@ -196,15 +198,14 @@ h3 {
 	color: #424242;
 	font-size: 2.4em;
 	position: absolute;
-	right: 8px;
+	right: 15px;
   text-align: center;
-	top: 0.1px;
-	width: 24px;
-	height: 2.6em;
+	top: 0.01em;
+	width: 0.7em;
+	height: 2.9em;
 	text-decoration: none;
 	-webkit-border-radius: 0px;
 	-moz-border-radius: 0px;
-
 	-webkit-transition: color .3s;
 	-moz-transition:    color .3s;
 	-ms-transition:     color .3s;
