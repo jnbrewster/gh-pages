@@ -5,7 +5,6 @@ hr,ul,li,ol,ul,
 table,tr,td,th,p,img {
 margin:0;
 padding:0;
-font-size: 1em;
 }
 
 img,fieldset {
@@ -43,7 +42,6 @@ ul.nav li {
 
 a:hover {
 	color: #96BBDC;
-
 }
 
 p {
@@ -51,6 +49,7 @@ p {
 }
 
 body {
+	font-size:1em;
 	background:#FAFAFA;
 	height:auto;
 	text-align:center;
@@ -100,7 +99,6 @@ h3 {
 }
 
 #headerIndex {
-	font-size:3.04em;
 	width:7.75em;
 	white-space:nowrap;
 	overflow:hidden;
@@ -111,13 +109,19 @@ h3 {
 }
 
 #headerProjects {
-	padding-bottom: 0.1em;
-	border-bottom: 1px solid #fafafa;
+	/*border-bottom: 1px solid #3f3f3f;*/
+	width:7.75em;
+	white-space:nowrap;
+	overflow:hidden;
+	border-right: .4em solid #E0BC72;
+	background: #343434;
+	/*this looks bad*/
 }
 
 #projectHeader
 {
 	text-align:center;
+
 }
 
 #contactHeader
@@ -135,7 +139,6 @@ h3 {
 
 .text
 {
-	font-size:1.5em;
 	color:#3F3F3F;
 	height:auto;
 	text-align:center;
@@ -143,33 +146,34 @@ h3 {
 }
 
 #msg {
+
 	margin-left: 2%;
+	margin-right: 2%;
 }
 
 /*fix up clipping of modal at smaller sizes*/
 /* add media queries here */
 @media only screen and (max-width: 499px) {
     body {
-			min-width:500px;
+			/*min-width:500px;*/
 
     }
 }
 
-/*Add slide in animation*/
 .modalDialog {
-	position: fixed;
+	position: absolute !important;
+	overflow: scroll;
 	top: 0;
 	right: 0;
 	bottom: 0;
 	left: 0;
-
 	background:#424242;
 	margin:0 auto 1em;
 	z-index: 99999;
 	opacity:0;
-	-webkit-transition: opacity 400ms ease-in;
-	-moz-transition: opacity 400ms ease-in;
-	transition: opacity 400ms ease-in;
+	-webkit-transition: opacity 600ms ease-in;
+	-moz-transition: opacity 600ms ease-in;
+	transition: opacity 600ms ease-in;
 	pointer-events: none;
 }
 
@@ -184,35 +188,24 @@ h3 {
 	position: relative;
 	border-radius: .2em;
 	margin:0 auto 1em;
-	padding: 0 .5em 1em .5em;
 	background:#5C5C5C;
 }
 
 .modalDialog p {
-	font-size: 1.2em;
 }
 
 .close {
-	background: #E0BC72;
 	color: #424242;
 	font-size: 2.4em;
 	position: absolute;
-	right: 15px;
+	right: .30em;
+	top: 0.6em;
   text-align: center;
-	top: 0.01em;
-	width: 0.8em;
+	width: 1em;
 	height: 2.6em;
 	text-decoration: none;
-	-webkit-border-radius: 0px;
-	-moz-border-radius: 0px;
-	-webkit-transition: color .3s;
-	-moz-transition:    color .3s;
-	-ms-transition:     color .3s;
-	-o-transition:      color .3s;
-	transition:         color .3s;
 }
 
 .close:hover {
-	background: #96BBDC;
-	color: #424242;
+	text-color: #424242;
 }

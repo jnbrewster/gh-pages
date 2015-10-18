@@ -4,12 +4,11 @@ I started work on my first landing page. I made a horizontal layout on [mockingb
 
 ![First layout](/images/layout1.png)
 
+#Layout 1
 On a larger display there were 3 static sections up the top with the headings; about, projects and contact information.
 It had a page under each heading with corresponding information.
 
----
 |about|projects|contact
----
 
 I had trouble with getting a table to move smoothly from horizontal layout to a vertical layout on a smaller screen. I changed the group of headings from a list to a table and added media queries to change from a phone to
 a tablet or a bigger screen. I felt like having it change from a horizontal layout to a vertical one was just an exercise and didn't really improve the look of the page.
@@ -27,3 +26,7 @@ I'm still unsure what sort of color theme I'd like to use on the landing page. I
 
 #Layout 3
 Added a modalDialog to show completed projects. Added git hub links.
+
+#Modal popup
+
+#Projects links
