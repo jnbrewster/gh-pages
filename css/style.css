@@ -7,6 +7,15 @@ margin:0;
 padding:0;
 }
 
+colors {
+	dark: ;
+	medium:;
+	light:;
+	highlight;
+	mouseover:;
+
+
+}
 img,fieldset {
 	border:none;
 	padding: 1em;
@@ -114,7 +123,6 @@ h3 {
 	white-space:nowrap;
 	overflow:hidden;
 	border-right: .4em solid #E0BC72;
-	background: #343434;
 	/*this looks bad*/
 }
 
