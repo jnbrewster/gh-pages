@@ -152,7 +152,7 @@ h3 {
 
 @media only screen and (max-width: 768px) {
     body {
-			-webkit-device-pixel-ratio: 1.5
+			-webkit-device-pixel-ratio: 1
 			min-width:500px;
     }
 }
