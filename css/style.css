@@ -152,10 +152,17 @@ h3 {
 
 @media only screen and (max-width: 768px) {
     body {
+			-webkit-device-pixel-ratio: 2
 			min-width:500px;
     }
 }
-@media screen and (max-width: 320px) and (max-height: 480px) and (-webkit-device-pixel-ratio: 2)
+
+@media only screen and (max-width: 360) {
+    body {
+			-webkit-device-pixel-ratio: 3
+			min-width:500px;
+    }
+}
 
 
 .modalDialog {
