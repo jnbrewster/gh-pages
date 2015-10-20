@@ -41,7 +41,7 @@ ul.nav li {
 }
 
 a:hover {
-	color: #96BBDC;
+	color:#98BC99;
 }
 
 p {
@@ -50,10 +50,11 @@ p {
 
 body {
 	font-size:1em;
-	background:#FAFAFA;
+	background:#E0BEBD;
 	height:auto;
 	text-align:center;
 	font-family: monospace;
+
 }
 
 section
@@ -153,7 +154,7 @@ h3 {
 	margin-right: 2%;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 500px) {
     body {
 			/*-webkit-device-pixel-ratio: 1*/
 			min-width:500px;
@@ -167,13 +168,13 @@ h3 {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background:#424242;
-	/*margin:0 auto 1em;*/
+	background:#FFBFBD;
+	margin:0 auto 1em;
 	z-index: 99999;
 	opacity:0;
-	-webkit-transition: opacity 600ms ease-in;
-	-moz-transition: opacity 600ms ease-in;
-	transition: opacity 600ms ease-in;
+	-webkit-transition: opacity 900ms ease-in;
+	-moz-transition: opacity 900ms ease-in;
+	transition: opacity 900ms ease-in;
 	pointer-events: none;
 }
 
@@ -186,7 +187,7 @@ h3 {
 .modalDialog > div {
 	width: 500px;
 	position: relative;
-	/*border-radius: .2em;*/
+	border-radius: .2em;
 	margin:0 auto 1em;
 	background:#5C5C5C;
 }
