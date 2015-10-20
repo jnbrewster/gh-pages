@@ -154,14 +154,13 @@ h3 {
 /* add media queries here */
 @media only screen and (max-width: 499px) {
     body {
-			/*min-width:500px;*/
-
+			min-width:500px;
     }
 }
 
 .modalDialog {
 	position: absolute !important;
-	overflow: scroll;
+	overflow: auto;
 	top: 0;
 	right: 0;
 	bottom: 0;
