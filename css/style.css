@@ -157,6 +157,8 @@ h3 {
 @media only screen and (max-width: 500px) {
     body {
 			-webkit-device-pixel-ratio: 1
+			initial-scale=0.6
+			maximum-scale=1.0
 			min-width:500px;
     }
 }
