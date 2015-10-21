@@ -157,9 +157,10 @@ h3 {
 @media only screen and (max-width: 500px) {
     body {
 			-webkit-device-pixel-ratio: 1
-			initial-scale=0.6
-			maximum-scale=1.0
+			initial-scale:0.6
+			maximum-scale:1.0
 			min-width:500px;
+			user-scalable:1;
     }
 }
 
@@ -170,7 +171,7 @@ h3 {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background:#FFBFBD;
+	/*background:#FFBFBD;*/
 	margin:0 auto 1em;
 	z-index: 99999;
 	opacity:0;
