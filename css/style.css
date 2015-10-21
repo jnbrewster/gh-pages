@@ -156,11 +156,17 @@ h3 {
 
 @media only screen and (max-width: 500px) {
     body {
-			/*-webkit-device-pixel-ratio: 1*/
+			-webkit-device-pixel-ratio: 1
 			min-width:500px;
     }
 }
 
+@media only screen and (max-width: 360px) {
+    body {
+			-webkit-device-pixel-ratio: 2
+			min-width:500px;
+    }
+}
 .modalDialog {
 	position: absolute !important;
 	overflow: auto;
