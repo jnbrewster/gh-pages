@@ -113,12 +113,10 @@ h3 {
 }
 
 #headerProjects {
-	/*border-bottom: 1px solid #3f3f3f;*/
-	width:7.75em;
+	width:7.91em;
 	white-space:nowrap;
 	overflow:hidden;
 	border-right: .4em solid #E0BC72;
-	/*this looks bad*/
 }
 
 #projectHeader
@@ -163,11 +161,10 @@ h3 {
 .modalDialog {
 	position: absolute !important;
 	overflow: auto;
-	top: 2px;
+	top: 3px;
 	right: 0;
 	bottom: 0;
 	left: 0;
-	/*background:#FFBFBD;*/
 	margin:0 auto 1em;
 	z-index: 99999;
 	opacity:0;
