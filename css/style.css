@@ -113,7 +113,7 @@ h3 {
 }
 
 #headerProjects {
-	width:7.91em;
+	width:7.75em;
 	white-space:nowrap;
 	overflow:hidden;
 	border-right: .4em solid #E0BC72;
@@ -161,7 +161,7 @@ h3 {
 .modalDialog {
 	position: absolute !important;
 	overflow: auto;
-	top: 3px;
+	top: 4px;
 	right: 0;
 	bottom: 0;
 	left: 0;
