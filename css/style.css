@@ -148,7 +148,8 @@ h3 {
 }
 .modalDialog {
     position: absolute !important;
-    overflow: auto;
+    overflow: scroll;
+    height:50em;
     top: 3px;
     right: 0;
     bottom: 0;
