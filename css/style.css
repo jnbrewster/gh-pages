@@ -148,9 +148,9 @@ h3 {
     }
 }
 .modalDialog {
+    background: #E0BEBD;
     position: absolute !important;
     overflow: auto;
-    height: 50em;
     top: 3px;
     right: 0;
     bottom: 0;
@@ -219,7 +219,6 @@ h3 {
 	opacity: 0;
 
 	width: auto;
-	height: auto; /*was 400px*/
 	display: block;
 	position: absolute;
 	transform: scale(0);
