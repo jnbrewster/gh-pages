@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
+<meta name="viewport" content="width=500; initial-scale=0.7; maximum-scale=1.0; user-scalable=1;" />
+<html lang="en">
   <head>
-    <meta content="width=500; initial-scale=0.7; maximum-scale=1.0; user-scalable=1;" name="viewport">
     <title>
       Joel's landing page
     </title>
@@ -10,182 +10,52 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <div class="nav" style="margin-left: 2em">
-      <section class="text">
-        <div id="msg">
-          <h1 id="headerIndex">
-            <a href="index.html">Hello, World!</a>
-          </h1>
 
-          <p>
-            My name is Joel. I'm a 32 year old dad that has been teaching ESL since 2008, and have decided to change careers into IT.
-          </p>
+		<ul class="nav">
+			<section class="text">
+				<div id="msg">
+					<h1 id="headerIndex">
+						<a href="index.html">Hello, World!</a>
+					</h1>
+					<p>
+					My name is Joel. I'm a 32 year old dad that has been teaching ESL since 2008, and have decided to change careers into IT.
+					</p>
 
-          <p>
-            I love to learn, study and practice coding every day. I love computers, mechanical keyboards, tmux, vim and ncurses interfaces.
-          </p>
-          <img alt="Photo of hairy dude" id="selfPhoto" src="http://all-things-sloth.com/wp-content/uploads/2014/10/Sloth42.jpg" style="width:250px;height:230px;">
-        </div>
-      </section>
-    </div>
+					<p>
+					I love to learn, study and practice coding every day. I love computers, mechanical keyboards, tmux, vim and ncurses interfaces.
+					</p>
 
-    <div class="nav" style="margin-left: 2em">
-      <section class="projects">
-        <h2>
-        </h2>
+					<img id="selfPhoto"
+					src="http://all-things-sloth.com/wp-content/uploads/2014/10/Sloth42.jpg"
+					alt="Photo of hairy dude"style="width:250px;height:230px;">
+				</div>
+			</section>
+		</ul>
+		<ul class="nav">
+			<section class="projects">
+				<h2>
+					<li><a href="#openModal" id="projectHeader">Projects</a></li>
+				</h2>
 
-        <ul>
-          <li>
-            <a href="#openModal" id="projectHeader">Projects</a>
-          </li>
+				<div class="modalDialog" id="openModal">
+					<div>
+						<a class="close" href="#close" title="Close" alt="close the project list">X</a>
 
-          <li style="list-style: none; display: inline">
-            <div class="modalDialog" id="openModal">
-              <div>
-                <a class="close" href="#close" title="Close">X</a>
-                <div id="project">
-                  <div id="msg">
-                    <h1 id="headerProjects">
-                    </h1>
+						<div id="project">
+						<div id="msg">
+							<h1 id="headerProjects">
 
-                    <ul>
-                      <li>
-                        <a class="button" href="https://github.com/jnbrewster/" id="staticHeader">Github</a>
-                      </li>
+								<li><a href="https://github.com/jnbrewster/" id="staticHeader" class="button">Github</a></li>
+							</h1>
 
-                      <li style="list-style: none; display: inline">
-                        <p class="projectInfo">
-                          Here I host all of my projects, scripts, gists, dotfiles and this site too. Have a peek.
-                        </p>
-                      </li>
-                    </ul>
-                  </div>
+							<p class="projectInfo">
+								Here I host all of my projects, scripts, gists, dotfiles and this site too. Have a peek.
+							</p>
+						</div>
 
-                  <ul class="slides">
-                    <li style="list-style: none">
-                      <input checked id="img-1" name="radio-btn" type="radio">
-                    </li>
-
-                    <li class="slide-container">
-                      <div class="slide">
-                        <a href="https://github.com/jnbrewster/KoreanCharacters"><img src="images/KoreanCharacters.png"></a>
-                        <p>
-                          This learning app hopes to show how to read and pronounce basic Korean characters. It uses a tabbed layout with fragments and triggers sounds with a grid of onClickListeners. The row of tabs presents groups of consonants and the rows within the tabs show the most common consonant/vowel combination. The user presses each character to get a corresponding audio response in Korean.
-                        </p>
-                      </div>
-
-                      <div class="nav">
-                        <label class="prev" for="img-6">&#x2039;</label> <label class="next" for="img-2">&#x203a;</label>
-                      </div>
-                    </li>
-
-                    <li style="list-style: none">
-                      <input id="img-2" name="radio-btn" type="radio">
-                    </li>
-
-                    <li class="slide-container">
-                      <div class="slide">
-                        <a href="https://github.com/jnbrewster/QuickVideo"><img src="images/QuickVideoRecorder.png"></a>
-                        <p>
-                          This is a simple video recording app that uses no permissions. I used savedInstanceStates, onActivityResults and Toast messages. The aim was to make a quick loading video app that got out of the way of the user. It has very positive reviews, with some terrible ones too from younger Android users.
-                        </p>
-                      </div>
-
-                      <div class="nav">
-                        <label class="prev" for="img-1">&#x2039;</label> <label class="next" for="img-3">&#x203a;</label>
-                      </div>
-                    </li>
-
-                    <li style="list-style: none">
-                      <input id="img-3" name="radio-btn" type="radio">
-                    </li>
-
-                    <li class="slide-container">
-                      <div class="slide">
-                        <a href="https://github.com/jnbrewster/LightSaber"><img src="images/Lightsaber.png"></a>
-                        <p>
-                          This is a fun app for children meant to emulate a lightsaber from the Starwars movie series. It uses sensorEvenListeners, shakeDetectors, and some other sensorManager imports. The user moves the phone around like a lightsaber and the app vibrates when sounds trigger, emulating a lightsaber fight.
-                        </p>
-                      </div>
-
-                      <div class="nav">
-                        <label class="prev" for="img-2">&#x2039;</label> <label class="next" for="img-4">&#x203a;</label>
-                      </div>
-                    </li>
-
-                    <li style="list-style: none">
-                      <input id="img-4" name="radio-btn" type="radio">
-                    </li>
-
-                    <li class="slide-container">
-                      <div class="slide">
-                        <a href="https://github.com/jnbrewster/MonsterScanner"><img src="images/MonsterScanner.png"></a>
-                        <p>
-                          Monster scanner is a silly app that I thought would be fun for really young children and first time dads/moms. It "scans" an area by taking a photo and then "detects" monsters in that area. It then returns a Toast message displaying if monsters have been found.
-                        </p>
-                      </div>
-
-                      <div class="nav">
-                        <label class="prev" for="img-3">&#x2039;</label> <label class="next" for="img-5">&#x203a;</label>
-                      </div>
-                    </li>
-
-                    <li style="list-style: none">
-                      <input id="img-5" name="radio-btn" type="radio">
-                    </li>
-
-                    <li class="slide-container">
-                      <div class="slide">
-                        <a href="https://github.com/jnbrewster/dotfiles"><img src="images/dotfiles.png"></a>
-                        <p>
-                          These are my dotfiles for the main apps I use on OS X. I use vim, tmux, and amethyst as a window arranger mostly with Launchbar for scripts and Karabiner to modify my Leopold FC 660 to behave properly. I also like to use xquartz with dwm when I don't need a webbrowser.
-                        </p>
-                      </div>
-
-                      <div class="nav">
-                        <label class="prev" for="img-4">&#x2039;</label> <label class="next" for="img-1">&#x203a;</label>
-                      </div>
-                    </li>
-
-                    <li style="list-style: none">
-                      <input id="img-6" name="radio-btn" type="radio">
-                    </li>
-
-                    <li class="slide-container">
-                      <div class="slide">
-                        <a href="https://gist.github.com/jnbrewster"><img src="images/gists.png"></a>
-                        <p>
-                          These are links to my gitsts which are mostly single use scripts that aren't too special.
-                        </p>
-                      </div>
-
-                      <div class="nav">
-                        <label class="prev" for="img-5">&#x2039;</label> <label class="next" for="img-1">&#x203a;</label>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </section>
-    </div>
-
-    <div class="nav" style="margin-left: 2em">
-      <section class="contact">
-        <h3>
-        </h3>
-
-        <ul>
-          <li>
-            <a class="contactHeader button" href="mailto:j.n.brewster@gmail.com">Contact me!</a>
-          </li>
-        </ul>
-      </section>
-    </div>
-  </body>
-</html>
+					  <ul class="slides">
+							<input type="radio" name="radio-btn" id="img-1" checked />
+							<li class="slide-container">
 							<div class="slide">
 								<a href="https://github.com/jnbrewster/KoreanCharacters">
 								<img src="images/KoreanCharacters.png"/></a>
@@ -298,3 +168,4 @@
 
   </body>
 </html>
+
