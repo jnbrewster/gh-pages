@@ -6,7 +6,7 @@ permalink:           pretty
 # Setup
 title:               Hello
 tagline:             I should be studying
-url:                 https://github.com/jnbrewster/jnbrewster.github.io
+url:                 http://joelbrewster.com
 paginate:            1
 baseurl:             ""
 
@@ -20,5 +20,5 @@ sass:
 # About/contact
 author:
   name:              Joel Brewster
-  url:               https://github.com/jnbrewster
+  url:               http://joelbrewster.com
   email:             j.n.brewster@gmail.com
