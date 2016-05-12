@@ -48,9 +48,7 @@ $(function() {
     if (winner == 'red' || 'blue') {
       console.log("board");
       $('#board').css('position', 'relative').append('<div class="cover"></div>');
-
       $('.cover').css('position', 'relative').append('<div class="conf-cont">');
-
       $('.cover').css('position', 'relative').append('<div class="confetti"></div>');
       $('.cover').css('position', 'relative').append('<div class="confetti"></div>');
       $('.cover').css('position', 'relative').append('<div class="confetti"></div>');
@@ -199,4 +197,3 @@ $(function() {
     }
   });
 });
-
