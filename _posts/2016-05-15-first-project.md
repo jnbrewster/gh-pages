@@ -40,8 +40,8 @@ I had an awesome week doing this project. I'd like to polish it up and clean the
 
 ```
 
-   ┌───────────────────────────────────────────────────────────────────┐
-   │    This is the initial screen - grid takes up the whole page.     │
+   ┌─────────────────────────────────────────────────────────────────┐
+   │    This is the initial screen - grid takes up the whole page.   │
 ┌──┴────────────┬──────────────────┬──────────────────┬──────────────┴─┐
 │░░░░░░░░░░░░░░░│░░░░░░░░░░░░░░░░░░│░░░░░░░░░░░░░░░░░░│░░░░░░░░░░░░░░░░│
 │░░░░░░░░░░░░░░░│░░░░░░░░░░░░░░░░░░│░░░░░░░░░░░░░░░░░░│░░░░░░░░░░░░░░░░│
@@ -82,15 +82,15 @@ I had an awesome week doing this project. I'd like to polish it up and clean the
 │░░░░░░░░░░░░░░░│░░░░░░░░░░░░░░░░░░│░░░░░░░░░░░░░░░░░░│░░░░░░░░░░░░░░░░│
 │░░░░░░░░░░░░░░░│░░░░░░░░░░░░░░░░░░│░░░░░░░░░░░░░░░░░░│░░░░░░░░░░░░░░░░│
 └┬──────────────┴──────────────────┴──────────────────┴──────────────┬─┘
- │ On load, display an overlay with game rules, click the square, get 4 │
- │                             in a row to win.                         │
- └──────────────────────────────────────────────────────────────────────┘
+ │  On load, display an overlay with game rules, click the square,   │
+ │                          get 4 in a row to win.                   │
+ └───────────────────────────────────────────────────────────────────┘
 
 
-  ┌───────────────────────────────────────────────────────────────────┐
-  │         Display player turn with an overlay for a few seconds.    │
-  │ Mouse hover changes the square color to match the player.         │
-  │                   Click plays a sound and changes the div color.  │
+  ┌─────────────────────────────────────────────────────────────────┐
+  │         Display player turn with an overlay for a few seconds.  │
+  │ Mouse hover changes the square color to match the player.       │
+  │                 Click plays a sound and changes the div color.  │
 ┌─┴───────────────┬──────────────────┬──────────────────┬───────────┴──┐
 │░░░░░░░░░░░░░░░░░│░░░░░░░░░░░░░░░░░░│░░░░░░░░░░░░░░░░░░│░░░░░░░░░░░░░░│
 │░░░░░░░░░░░░░░░░░│░░░░░░░░░░░░░░░░░░│░░░░░░░░░░░░░░░░░░│░░░░░░░░░░░░░░│
@@ -138,6 +138,7 @@ I had an awesome week doing this project. I'd like to polish it up and clean the
 
 ## Reflection
 If I could redo it over again, I'd definately redo the javascript board logic with modulo.
+
 - Something like this:
 
 ```
@@ -170,4 +171,4 @@ etc, etc, etc
 
 - I jumped in too quick to start and didn't think about how to go/loop over the board well enough.
 - Look into getting the sounds implemented and some music when there's some free time.
-- Redo the project in Ruby when we start that next week.
+- Redo the project in Ruby which we are actually starting next week.
