@@ -38,7 +38,7 @@ I had an awesome week doing this project. I'd like to polish it up and clean the
 
 ## Wireframe information
 
-``
+```
 
     ┌───────────────────────────────────────────────────────────────────┐
     │    This is the initial screen - grid takes up the whole page.     │
@@ -134,12 +134,12 @@ I had an awesome week doing this project. I'd like to polish it up and clean the
   └──────────────────────────────────────────────────────────────────────┘
 
 
-``
+```
 
 ##Reflection
 If I could redo it over again, I'd definately redo the javascript board logic with modulo.
 - Something like this:
-``
+```
 var rowLength = 4;
 var redCount = 0;
 var blueCount = 0;
@@ -165,7 +165,7 @@ for(var i=0, i<n; i++){
   }
 }
 etc, etc, etc
-``
+```
 
 - I jumped in too quick to start and didn't think about how to go/loop over the board well enough.
 - Look into getting the sounds implemented and some music when there's some free time.
