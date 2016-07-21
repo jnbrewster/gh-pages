@@ -1,0 +1,64 @@
+body {
+  background-color: #222222;
+  background: -webkit-radial-gradient(circle, #111111, #222222); /* Safari */
+  background: -o-radial-gradient(circle, #111111, #222222); /* Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(circle, #111111, #222222); /* Firefox 3.6 to 15 */
+  background: radial-gradient(circle, #111111, #222222); /* Standard syntax */
+}
+
+/* Max the page too 10% */
+html,
+body {
+  height: 100%;
+}
+
+.nx {
+  display:block;
+  align: center;
+}
+
+.middle {
+  padding-top: 4%;
+  padding-bottom: 7%;
+  -webkit-box-ordinal-group: 1;
+  -moz-box-ordinal-group: 1;
+  box-ordinal-group: 1;
+
+  -webkit-box-flex: 0;
+  -moz-box-flex: 0;
+  box-flex: 0;
+}
+
+.left {
+  opacity: 0.2;
+  -webkit-box-ordinal-group: 1;
+  -moz-box-ordinal-group: 1;
+  box-ordinal-group: 1;
+
+  -webkit-box-flex: 0;
+  -moz-box-flex: 0;
+  box-flex: 0;
+
+  padding-right: 10%;
+}
+
+.right {
+
+  opacity: 0.2;
+  -webkit-box-ordinal-group: 1;
+  -moz-box-ordinal-group: 1;
+  box-ordinal-group: 1;
+
+  -webkit-box-flex: 0;
+  -moz-box-flex: 0;
+  box-flex: 0;
+
+  padding-left: 10%;
+}
+
+.help {
+  font-size: 1em;
+  font-weight: bold;
+  color: black;
+}
+
