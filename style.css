@@ -12,7 +12,52 @@ a:hover, a:visited, a:link, a:active
 }
 
 a {
-  border: 2px solid black;
+  /* border: 2px solid black; */
+  padding: 10px;
 }
 
+#container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
 
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+}
+
+#left {
+  border-width:1px;
+  border-style:ridge;
+  -webkit-box-ordinal-group: 1;
+  -moz-box-ordinal-group: 1;
+  box-ordinal-group: 1;
+
+  -webkit-box-flex: 0;
+  -moz-box-flex: 0;
+  box-flex: 0;
+}
+
+#right {
+  border-width:1px;
+  border-style:ridge;
+  -webkit-box-ordinal-group: 1;
+  -moz-box-ordinal-group: 1;
+  box-ordinal-group: 1;
+
+  -webkit-box-flex: 0;
+  -moz-box-flex: 0;
+  box-flex: 0;
+}
