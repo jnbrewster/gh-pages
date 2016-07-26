@@ -39,6 +39,7 @@ a {
 }
 
 #left {
+  padding: 1%;
   border-width:1px;
   border-style:ridge;
   -webkit-box-ordinal-group: 1;
@@ -51,6 +52,7 @@ a {
 }
 
 #right {
+  padding: 1%;
   border-width:1px;
   border-style:ridge;
   -webkit-box-ordinal-group: 1;
@@ -60,4 +62,11 @@ a {
   -webkit-box-flex: 0;
   -moz-box-flex: 0;
   box-flex: 0;
+}
+
+#bottom {
+  margin: 0 30%;
+  padding: 1%;
+  border-width:1px;
+  border-style:ridge;
 }
