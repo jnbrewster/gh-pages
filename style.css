@@ -1,104 +1,65 @@
 body {
-  text-align: center;
   font-family: 'Inconsolata', monospace;
   font-size: 200%;
+  line-height: 140%;
+  height: 100%;
 }
-
-a:hover, a:visited, a:link, a:active
-{
-  text-decoration: none;
-  color: inherit;
-  padding: 20px;
+.wrapper {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 5.33em 1.33em 0
 }
-
-a {
-  /* border: 2px solid black; */
-  padding: 10px;
+.about {
+  position: relative;
+  text-align: center
 }
-
-#container {
-  display: -webkit-box;
-  display: -moz-box;
-  display: box;
-
-  -webkit-box-orient: horizontal;
-  -moz-box-orient: horizontal;
-  box-orient: horizontal;
-
-  -webkit-box-pack: center;
-  -moz-box-pack: center;
-  box-pack: center;
-
-  -webkit-box-direction: normal;
-  -moz-box-direction: normal;
-  box-direction: normal;
-
-  -webkit-box-align: center;
-  -moz-box-align: center;
-  box-align: center;
+.oneliner {
+  font-size: 60%;
 }
-
-#left {
-  padding: 1%;
-  border-width:1px;
-  border-style:ridge;
-  -webkit-box-ordinal-group: 1;
-  -moz-box-ordinal-group: 1;
-  box-ordinal-group: 1;
-
-  -webkit-box-flex: 0;
-  -moz-box-flex: 0;
-  box-flex: 0;
+.contact {
+  text-align: center
 }
-
-#right {
-  padding: 1%;
-  border-width:1px;
-  border-style:ridge;
-  -webkit-box-ordinal-group: 1;
-  -moz-box-ordinal-group: 1;
-  box-ordinal-group: 1;
-
-  -webkit-box-flex: 0;
-  -moz-box-flex: 0;
-  box-flex: 0;
+.contact a {
+  border-bottom: 0;
+  color: grey;
+  font-size: 1.5em;
+  margin-right: .56em;
+  padding-bottom: 0
 }
+/* .contact a:hover { */
+/*   color: #333 */
+/* } */
 
-#bottom {
+.wrapper {
 
 }
 
-#project1 {
-  margin: 0 35%;
-  padding: 1%;
-  border-width:1px;
-  border-style:ridge;
+@media screen and (max-width:768px) {
+  .wrapper {
+    padding: 4em 1em 0
+  }
 }
 
-#project2 {
-  margin: 0 35%;
-  padding: 1%;
-  border-width:1px;
-  border-style:ridge;
+@media screen and (max-width:773px) {
+  .wrapper {
+    padding: 2em 1em 0
+  }
 }
 
-#project3 {
-  margin: 0 35%;
-  padding: 1%;
-  border-width:1px;
-  border-style:ridge;
+@media screen and (max-width:667px) {
+  .wrapper {
+    padding: 2em 1em 0
+  }
 }
 
-#project4 {
-  margin: 0 35%;
-  padding: 1%;
-  border-width:1px;
-  border-style:ridge;
+@media screen and (max-width:414px) {
+  .wrapper {
+    padding: 2em 2em 0
+  }
 }
 
-#project5 {
-  margin: 0 35%;
-  padding: 1%;
-  border-width:1px;
-  border-style:ridge;
+@media screen and (max-width:320px) {
+  .wrapper {
+    padding: 2em 1em 0
+  }
 }
