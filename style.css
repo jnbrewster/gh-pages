@@ -3,7 +3,6 @@ body {
   font-size: 200%;
   line-height: 140%;
   height: 100%;
-  color: rgba(0, 0, 0, 0.9);
 }
 .wrapper {
   margin: 0 auto;
@@ -66,9 +65,10 @@ body {
   font-size: 1.5em;
   margin-right: .56em;
   padding-bottom: 0;
-  color: rgba(0, 0, 0, 0.9);
+  color: rgba(0, 0, 0, 1);
 }
 .contact_list a:hover i {
+  color: rgba(0, 0, 0, .9);
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -ms-transition: all 1s ease;
