@@ -3,15 +3,17 @@ body {
   font-size: 200%;
   line-height: 140%;
   height: 100%;
+  position: relative;
+  text-align: center;
+}
+
+h1 {
+  font-size: 200%;
 }
 .wrapper {
   margin: 0 auto;
   max-width: 960px;
   padding: 5.33em 1.33em 0;
-}
-.about {
-  position: relative;
-  text-align: center;
 }
 .oneliner {
   font-size: 60%;
@@ -112,3 +114,43 @@ body {
   }
 }
 
+div.wrapper span.tooltip {
+  display: inline-block;
+  position: relative;
+  line-height: 1rem;
+  font-size: 1rem;
+}
+div.wrapper span.tooltip:after {
+  position: absolute;
+  /* padding: 2px; */
+  /* width: 20rem; */
+  /* -webkit-border-radius: 15px; */
+  /* -moz-border-radius: 15px; */
+  /* -ms-border-radius: 15px; */
+  color: #151515;
+  white-space: wrap;
+  /* background-color: #ffffff; */
+  /* pointer-events: none; */
+  content: attr(data-tooltip);
+  opacity: 0;
+}
+div.wrapper span.tooltip:hover::after, div.wrapper span.tooltip:focus::after {
+  display: block;
+  opacity: .8;
+}
+div.wrapper span.tooltip:after {
+  bottom: 2.2rem;
+  right: .85rem;
+  transform: translateY(0px);
+  -webkit-transition: 2s ease all;
+  -moz-transition: 2s ease all;
+  -ms-transition: 2s ease all;
+  transition: 2s ease all;
+}
+div.wrapper span.tooltip:before {
+  bottom: 0.2rem;
+  left: 50%;
+}
+div.wrapper span.tooltip:hover::after, div.wrapper span.tooltip:focus::after {
+  transform: translateY(-85%);
+}
