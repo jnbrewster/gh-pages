@@ -130,11 +130,6 @@ div.wrapper span.tooltip {
 }
 div.wrapper span.tooltip:after {
   position: absolute;
-  /* padding: 2px; */
-  /* width: 20rem; */
-  /* -webkit-border-radius: 15px; */
-  /* -moz-border-radius: 15px; */
-  /* -ms-border-radius: 15px; */
   color: #151515;
   white-space: wrap;
   /* background-color: #ffffff; */
