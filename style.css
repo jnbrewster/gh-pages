@@ -20,12 +20,13 @@ h1 {
 }
 
 div.bug {
-  width: 1px;
+  width: 2px;
   height:1px;
   background-color:black;
   position:fixed;
   display: float;
   border-radius: 25px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
 }
 .contact_list {
   padding-top: 1.75%;
