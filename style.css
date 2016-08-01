@@ -18,6 +18,15 @@ h1 {
 .oneliner {
   font-size: 60%;
 }
+
+div.bug {
+  width: 1px;
+  height:1px;
+  background-color:black;
+  position:fixed;
+  display: float;
+  border-radius: 25px;
+}
 .contact_list {
   padding-top: 1.75%;
   -webkit-animation: fadein 5s;
