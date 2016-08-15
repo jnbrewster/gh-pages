@@ -1,5 +1,4 @@
 html {
-
 }
 body {
   font-family: 'Inconsolata', monospace;
@@ -25,7 +24,6 @@ canvas {
 h1 {
   font-size: 200%;
   background: #FDB920;
-  /* display: inline-block; */
   padding: 0 10px;
 }
 .wrapper {
@@ -37,16 +35,33 @@ h1 {
   font-size: 60%;
 }
 div.bug {
-  width: 3px;
-  height:2px;
-  background-color: black;
   position:fixed;
   display: float;
-  border-radius: 50%;
-  box-shadow: 0px 0px 1px rgba(255, 185, 35, 0.8);
   z-index: 999;
 }
-/* fa fa-bug */
+i.fa.fa-bug {
+  font-size: 4px;
+  text-shadow: 0px 0px 1px rgba(255, 185, 35, 0.8);
+}
+.slow-spin {
+  -webkit-animation: fa-spin 30s infinite linear;
+  animation: fa-spin 30s infinite linear;
+}
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    color: pink;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
 .contact_list {
   padding-top: 1.75%;
   -webkit-animation: fadein 5s;
