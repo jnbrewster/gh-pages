@@ -24,7 +24,9 @@ canvas {
 }
 h1 {
   font-size: 200%;
-  background: #FDB920; display: inline-block; padding: 0 30px;
+  background: #FDB920;
+  display: inline-block;
+  padding: 0 20px;
 }
 .wrapper {
   margin: 0 auto;
