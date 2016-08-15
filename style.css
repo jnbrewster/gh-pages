@@ -1,3 +1,7 @@
+html {
+  background: #788599;
+  background-size: cover;
+}
 body {
   font-family: 'Inconsolata', monospace;
   font-size: 200%;
