@@ -141,19 +141,19 @@ div.bug {
     padding: 2em .5em 0;
   }
 }
-@media screen and (max-width: 301px) {
-  .wrapper {
-    padding: 1.5em .3em 0;
-    font-size: .4rem;
-  }
-}
+/* @media screen and (max-width: 301px) { */
+/*   .wrapper { */
+/*     padding: 1.5em .3em 0; */
+/*     font-size: .4rem; */
+/*   } */
+/* } */
 
-@media screen and (max-width: 282px) {
-  .wrapper {
-    padding: 1em .2em 0;
-    font-size: 10%;
-  }
-}
+/* @media screen and (max-width: 282px) { */
+/*   .wrapper { */
+/*     padding: 1em .2em 0; */
+/*     font-size: 10%; */
+/*   } */
+/* } */
 
 div.wrapper span.tooltip {
   display: inline-block;
