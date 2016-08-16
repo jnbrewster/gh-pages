@@ -14,7 +14,7 @@ canvas {
 h1 {
   font-size: 200%;
   text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.3);
-  background: #82CBFC;
+  background: #8CC7FF;
   padding: 0 10px;
 }
 .wrapper {
@@ -106,9 +106,6 @@ div.bug {
 .wrapper {} @media screen and (max-width: 768px) {
   .wrapper {
     padding: 4em 1em 0;
-  }
-  h1 {
-  background: #82CBFC;
   }
 }
 @media screen and (max-width: 773px) {
