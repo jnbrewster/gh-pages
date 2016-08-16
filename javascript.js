@@ -39,3 +39,23 @@ function calcSpeed(prev, next) {
   return speed;
 }
 
+
+var $win = $(window),
+    w = 0,h = 0,
+    rgb = [],
+    getWidth = function() {
+        w = $win.width();
+        h = $win.height();
+    };
+
+$win.resize(getWidth).mousemove(function(e) {
+
+    rgb = [
+        Math.round(e.pageX/w * 255 + 10),
+        Math.round(e.pageY/h * 255 + 100),
+        250
+    ];
+
+    $('h1').css('background','rgb('+rgb.join(',')+')');
+
+}).resize();
