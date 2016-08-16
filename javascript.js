@@ -51,9 +51,9 @@ var $win = $(window),
 $win.resize(getWidth).mousemove(function(e) {
 
     rgb = [
-        155,
-        155,
-        155
+        Math.round(e.pageY/h * 127.5 + 97.5),
+        Math.round(e.pageY/h * 127.5 + 155.5),
+        Math.round(e.pageX/w * 127.5 + 220)
     ];
 
     $('h1').css('background','rgb('+rgb.join(',')+')');
