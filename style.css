@@ -181,9 +181,9 @@ div.wrapper span.tooltip:hover::after, div.wrapper span.tooltip:focus::after {
   transform: translatey(-85%);
 }
 .dotnav-left {
-  left: 10px;
-  top: 50%;
-  margin-top: -50px;
+  left: 1%;
+  top: 10%;
+  margin-top: 10%;
   height: 100px;
   z-index: 999;
   position: fixed;
@@ -211,7 +211,7 @@ div.wrapper span.tooltip:hover::after, div.wrapper span.tooltip:focus::after {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  border: 2px solid #66ccff;
+  border: 2px solid black;
   vertical-align: top;
   overflow: hidden;
   padding: 0;
@@ -219,14 +219,14 @@ div.wrapper span.tooltip:hover::after, div.wrapper span.tooltip:focus::after {
 }
 .dotnav > li > a:hover,
 .dotnav > li > a:focus {
-  background: #66ccff;
+  background: pink;
   outline: none;
 }
 .dotnav > li > a:active {
-  background: #66ccff;
+  background: blue;
 }
 .dotnav > li.active > a {
-  background: #66ccff;
+  background: green;
 }
 .dotnav-vertical > li {
   display: block;
