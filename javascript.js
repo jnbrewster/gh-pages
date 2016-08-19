@@ -40,6 +40,7 @@ function calcSpeed(prev, next) {
 }
 
 
+// Change colors of h1 div
 var $win = $(window),
     w = 0,h = 0,
     rgb = [],
@@ -59,3 +60,22 @@ $win.resize(getWidth).mousemove(function(e) {
     $('h1').css('background','rgb('+rgb.join(',')+')');
 
 }).resize();
+
+// scrolling
+$('body').scrollspy({
+  target: '#mainnav',
+  offset: 000
+});
+/* CSS Tricks smooth scrolling : http://css-tricks.com/snippets/jquery/smooth-scrolling/ */
+$('a[href*=#]:not([href=#])').click(function() {
+  if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+    var target = $(this.hash);
+    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+    if (target.length) {
+      $('html, body').animate({
+        scrollTop: target.offset().top
+      }, 500);
+      return false;
+    }
+  }
+});
