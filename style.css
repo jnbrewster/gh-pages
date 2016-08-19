@@ -1,4 +1,5 @@
 html {
+  height: 100%
 }
 body {
   font-family: 'inconsolata', monospace;
@@ -22,9 +23,6 @@ h1 {
   margin: 0 auto;
   max-width: 960px;
   padding: 5.33em 1.33em 0;
-  /* background-size: cover; */
-  /* width: 100%; */
-  /* height: 100%; */
 }
 .oneliner {
   font-size: 60%;
@@ -179,6 +177,20 @@ div.wrapper span.tooltip:before {
 }
 div.wrapper span.tooltip:hover::after, div.wrapper span.tooltip:focus::after {
   transform: translatey(-85%);
+}
+section {
+  padding-top: 5%;
+  min-height: 100%;
+  z-index: 1;
+  position: relative;
+}
+#home, #project1 {
+}
+#project2 {
+}
+#project3 {
+}
+#misc {
 }
 .dotnav-left {
   left: 1%;
