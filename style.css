@@ -1,11 +1,14 @@
-html {
-  height: 100%
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 120%;
+}
+body, html {
+  height: 100%;
 }
 body {
-  font-family: 'inconsolata', monospace;
-  font-size: 200%;
-  line-height: 140%;
-  height: 100%;
+  font-size: 120%;
+  background: #fff;
   position: relative;
   text-align: center;
 }
@@ -13,19 +16,14 @@ canvas {
   vertical-align: top;
 }
 h1 {
-  font-size: 200%;
-  /* font-weight: bold; */
   text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.3);
   background: #8cc7ff;
   padding: 0 10px;
 }
 .wrapper {
   margin: 0 auto;
-  max-width: 960px;
-  padding: 5.33em 1.33em 0;
 }
 .oneliner {
-  font-size: 60%;
 }
 div.bug {
   width: 3px;
@@ -82,7 +80,7 @@ div.bug {
 }
 .contact_list a {
   border-bottom: 0;
-  font-size: 1.5em;
+  /* font-size: 1.5em; */
   margin-right: .56em;
   color: rgba(0, 0, 0, 1);
 }
@@ -149,7 +147,7 @@ div.wrapper span.tooltip {
   display: inline-block;
   position: relative;
   line-height: 1rem;
-  font-size: 1rem;
+  /* font-size: 1rem; */
 }
 div.wrapper span.tooltip:after {
   position: absolute;
@@ -178,24 +176,29 @@ div.wrapper span.tooltip:before {
 div.wrapper span.tooltip:hover::after, div.wrapper span.tooltip:focus::after {
   transform: translatey(-85%);
 }
+
+
 section {
   padding-top: 5%;
   min-height: 100%;
+  font-weight: 300;
+  color: #2a3039;
   z-index: 1;
   position: relative;
 }
-#home, #project1 {
+section h1 {
+  font-size: 35px;
 }
-#project2 {
+
+#home, #contact {
 }
-#project3 {
+#skills {
 }
-#misc {
-}
+
 .dotnav-left {
-  left: 1%;
-  top: 10%;
-  margin-top: 10%;
+  left: 10px;
+  top: 50%;
+  margin-top: -50px;
   height: 100px;
   z-index: 999;
   position: fixed;
@@ -223,7 +226,7 @@ section {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  border: 2px solid black;
+  border: 2px solid #66ccff;
   vertical-align: top;
   overflow: hidden;
   padding: 0;
@@ -231,14 +234,14 @@ section {
 }
 .dotnav > li > a:hover,
 .dotnav > li > a:focus {
-  background: pink;
+  background: #8cc7ff;
   outline: none;
 }
 .dotnav > li > a:active {
-  background: blue;
+  background: #8cc7ff;
 }
 .dotnav > li.active > a {
-  background: green;
+  background: #8cc7ff;
 }
 .dotnav-vertical > li {
   display: block;

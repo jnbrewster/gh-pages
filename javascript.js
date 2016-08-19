@@ -27,55 +27,83 @@ function animateDiv() {
 }
 
 function calcSpeed(prev, next) {
-  var x = Math.abs(prev[1] - next[1]);
-  var y = Math.abs(prev[0] - next[0]);
+var x = Math.abs(prev[1] - next[1]);
+var y = Math.abs(prev[0] - next[0]);
 
-  var greatest = x > y ? x : y;
+var greatest = x > y ? x : y;
 
-  var speedModifier = 0.05;
+var speedModifier = 0.05;
 
-  var speed = Math.ceil(greatest/speedModifier);
+var speed = Math.ceil(greatest/speedModifier);
 
-  return speed;
+return speed;
 }
 
 
 // Change colors of h1 div
 var $win = $(window),
-    w = 0,h = 0,
-    rgb = [],
-    getWidth = function() {
-        w = $win.width();
-        h = $win.height();
-    };
+w = 0,h = 0,
+rgb = [],
+getWidth = function() {
+  w = $win.width();
+  h = $win.height();
+};
 
 $win.resize(getWidth).mousemove(function(e) {
 
-    rgb = [
-        Math.round(e.pageY/h * 127.5 + 97.5),
-        Math.round(e.pageY/h * 127.5 + 155.5),
-        Math.round(e.pageX/w * 127.5 + 220)
+  rgb = [
+    Math.round(e.pageY/h * 127.5 + 97.5),
+    Math.round(e.pageY/h * 127.5 + 155.5),
+    Math.round(e.pageX/w * 127.5 + 220)
     ];
 
     $('h1').css('background','rgb('+rgb.join(',')+')');
 
-}).resize();
+  }).resize();
 
-// scrolling
-$('body').scrollspy({
-  target: '#mainnav',
-  offset: 000
-});
-/* CSS Tricks smooth scrolling : http://css-tricks.com/snippets/jquery/smooth-scrolling/ */
-$('a[href*=#]:not([href=#])').click(function() {
-  if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-    var target = $(this.hash);
-    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-    if (target.length) {
-      $('html, body').animate({
-        scrollTop: target.offset().top
-      }, 500);
-      return false;
+  // scrolling
+  $('body').scrollspy({
+    target: '#mainnav',
+    offset: 000
+  });
+  /* CSS Tricks smooth scrolling : http://css-tricks.com/snippets/jquery/smooth-scrolling/ */
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 500);
+        return false;
+      }
     }
-  }
-});
+  });
+
+
+
+
+
+
+
+
+  // $('.awesome-tooltip').tooltip({
+  //   placement: 'left'
+  // });
+  // $('body').scrollspy({
+  //   target: '#mainnav',
+  //   offset: 000
+  // });
+  // /* CSS Tricks smooth scrolling : http://css-tricks.com/snippets/jquery/smooth-scrolling/ */
+  // $('a[href*=#]:not([href=#])').click(function() {
+  //   if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+  //     var target = $(this.hash);
+  //     target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+  //     if (target.length) {
+  //       $('html, body').animate({
+  //         scrollTop: target.offset().top
+  //       }, 500);
+  //       return false;
+  //     }
+  //   }
+  // });
