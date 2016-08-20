@@ -1,14 +1,10 @@
-* {
-  margin: 0;
-  padding: 0;
-  font-size: 120%;
-}
-body, html {
-  height: 100%;
+html {
 }
 body {
-  font-size: 120%;
-  background: #fff;
+  font-family: 'Inconsolata', monospace;
+  font-size: 200%;
+  line-height: 140%;
+  height: 100%;
   position: relative;
   text-align: center;
 }
@@ -16,14 +12,25 @@ canvas {
   vertical-align: top;
 }
 h1 {
+  font-size: 200%;
+  font-weight: bold;
   text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.3);
-  background: #8cc7ff;
+  background: #8CC7FF;
   padding: 0 10px;
 }
 .wrapper {
   margin: 0 auto;
+  max-width: 960px;
+  padding: 5.33em 1.33em 0;
+  /* background-size: cover; */
+  /* width: 100%; */
+  /* height: 100%; */
 }
 .oneliner {
+  font-size: 70%;
+}
+.comingsoon {
+  /* font-size: 40%: */
 }
 div.bug {
   width: 3px;
@@ -80,7 +87,7 @@ div.bug {
 }
 .contact_list a {
   border-bottom: 0;
-  /* font-size: 1.5em; */
+  font-size: 1.5em;
   margin-right: .56em;
   color: rgba(0, 0, 0, 1);
 }
@@ -106,48 +113,33 @@ div.bug {
 .wrapper {} @media screen and (max-width: 768px) {
   .wrapper {
     padding: 4em 1em 0;
-    .contact_list {
-      text-align: center;
-    }
   }
 }
 @media screen and (max-width: 773px) {
   .wrapper {
     padding: 2em 1em 0;
-    .contact_list {
-      text-align: center;
-    }
   }
 }
 @media screen and (max-width: 667px) {
   .wrapper {
     padding: 2em 1em 0;
-    .contact_list {
-      text-align: center;
-    }
   }
 }
 @media screen and (max-width: 414px) {
   .wrapper {
     padding: 2em 2em 0;
-    .contact_list {
-      text-align: center;
-    }
   }
 }
 @media screen and (max-width: 390px) {
   .wrapper {
     padding: 2em .5em 0;
-    .contact_list {
-      text-align: center;
-    }
   }
 }
 div.wrapper span.tooltip {
   display: inline-block;
   position: relative;
   line-height: 1rem;
-  /* font-size: 1rem; */
+  font-size: 1rem;
 }
 div.wrapper span.tooltip:after {
   position: absolute;
@@ -163,91 +155,16 @@ div.wrapper span.tooltip:hover::after, div.wrapper span.tooltip:focus::after {
 div.wrapper span.tooltip:after {
   bottom: 2.3rem;
   right: 2.9rem;
-  transform: translatey(0px);
-  -webkit-transition: 1s ease all;
-  -moz-transition: 1s ease all;
-  -ms-transition: 1s ease all;
-  transition: 1s ease all;
+  transform: translateY(0px);
+  -webkit-transition: 2s ease all;
+  -moz-transition: 2s ease all;
+  -ms-transition: 2s ease all;
+  transition: 2s ease all;
 }
 div.wrapper span.tooltip:before {
   bottom: 0.2rem;
   left: 50%;
 }
 div.wrapper span.tooltip:hover::after, div.wrapper span.tooltip:focus::after {
-  transform: translatey(-85%);
-}
-
-
-section {
-  padding-top: 5%;
-  min-height: 100%;
-  font-weight: 300;
-  color: #2a3039;
-  z-index: 1;
-  position: relative;
-}
-section h1 {
-  font-size: 35px;
-}
-
-#home, #contact {
-}
-#skills {
-}
-
-.dotnav-left {
-  left: 10px;
-  top: 50%;
-  margin-top: -50px;
-  height: 100px;
-  z-index: 999;
-  position: fixed;
-}
-
-.dotnav {
-  padding: 0;
-  list-style: none;
-  font-size: 0.001px;
-}
-
-.dotnav > li {
-  display: inline-block;
-  font-size: 1rem;
-  vertical-align: top;
-}
-.dotnav > li:nth-child(n+2) {
-  margin-left: 15px;
-}
-
-.dotnav > li > a {
-  display: inline-block;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  border: 2px solid #66ccff;
-  vertical-align: top;
-  overflow: hidden;
-  padding: 0;
-  text-indent: -999%;
-}
-.dotnav > li > a:hover,
-.dotnav > li > a:focus {
-  background: #8cc7ff;
-  outline: none;
-}
-.dotnav > li > a:active {
-  background: #8cc7ff;
-}
-.dotnav > li.active > a {
-  background: #8cc7ff;
-}
-.dotnav-vertical > li {
-  display: block;
-  margin-right:10px;
-}
-.dotnav-vertical > li:nth-child(n+2) {
-  margin-left: 0;
-  margin-top: 10px;
+  transform: translateY(-85%);
 }
