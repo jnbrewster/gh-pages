@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Maze!</title>
+</head>
+<body>
+<canvas id="draw" width="800" height="800"></canvas>
+<script>
+const canvas = document.querySelector('#draw');
+const ctx = canvas.getContext('2d');
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+ctx.strokeStyle = '#ff0000';
+ctx.lineJoin = 'round';
+ctx.lineCap = 'round';
+ctx.lineWidth = 2;
+
+let isDrawing = false;
+let lastX = 0;
+let lastY = 0;
+
+  function draw(e) {
+    if (!isDrawing) return; // stop the fn from running when they are not moused down
+    ctx.beginPath();
+  // start from
+  ctx.moveTo(lastX, lastY);
+  // go to
+  ctx.lineTo(e.offsetX, e.offsetY);
+  ctx.stroke();
+  [lastX, lastY] = [e.offsetX, e.offsetY];
+  }
+  canvas.addEventListener('mousedown', (e) => {
+    isDrawing = true;
+    [lastX, lastY] = [e.offsetX, e.offsetY];
+  });
+
+  canvas.addEventListener('mousemove', draw);
+  canvas.addEventListener('mouseup', () => isDrawing = false);
+  canvas.addEventListener('mouseout', () => isDrawing = false);
+
+</script>
+<style>
+  html, body {
+    margin:0;
+  }
+  body {
+    /*
+    background-image: url("http://www.cartoonrocks.com/wp-content/uploads/2016/11/printable-mazes-printable-maze-cartoonrocks-1.gif");
+    */
+    background-image: url("http://www.jigsaw-puzzles-free.com/Mazes/Printable/Images/Maze%2077.gif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size:cover
+    width: 100%;
+  }
+</style>
+
+</body>
+</html>
