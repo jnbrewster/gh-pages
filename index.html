@@ -1,31 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width" initial-scale="1">
-    <title>Joel Brewster</title>
-    <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-    <link rel="stylesheet" href="style.css" type="text/css" media="screen" title="" charset="utf-8">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
-    <script type="text/javascript" src="javascript.js"></script>
-  </head>
-  <body>
-    <div class='bug'>
-    </div>
-    <div class="wrapper">
-      <span class="about tooltip" data-tooltip="^_^"><h1>Hi, I'm Joel.</h1></span>
-      <div class="oneliner">
-        Check out my Github, look at my projects and let's chat.
-      </div>
-    </div>
-    <div class="contact_list ">
-      <a class="contact " href="https://github.com/joelbrewster" target="_blank"><i class="fa fa-github-alt"></i></a>
-      <a class="contact" href="http://codepen.io/joelbrewster/" target="_blank"><i class="fa fa-codepen"></i></a>
-      <a class="contact" href="https://www.linkedin.com/in/joelbrewster" target="_blank"><i class="fa fa-linkedin-square"></i></a>
-    </div>
-  </body>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width" initial-scale="1">
+	<title>Joel Brewster</title>
+	<link href="https://fonts.googleapis.com/css?family=Barlow+Condensed" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Rasa" rel="stylesheet">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen" title="" charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.3/vivus.min.js"></script>
+	<script type="text/javascript" src="javascript.js"></script>
+</head>
+<body>
+	<div class='bug'></div>
+	<div class="container">
+		<object class="profile-image profile-image-lines" id="my-svg" type="image/svg+xml" data="img/profile-lines.svg"></object>
+		<object class="profile-image profile-image-solid" type="image/svg+xml" data="img/profile-solid.svg"></object>
+		<section>
+			<div class="container-top">
+				<div class="wave">
+					👋🏼
+				</div>
+				<h1>
+					Hi, I'm Joel.
+				</h1>
+			</div>
+			<div class="copy">
+				I am a passionate, curious and enthusiastic developer <br>with a penchant for front-end development and interfaces.
+				<br>
+				I enjoy creating pixel perfect websites and apps.
+			</div>
+			<div class="copy">
+				I love front-end development, studying and composing.
+			</div>
+		</section>
+		<section>
+			<div class="container-top">
+				<h2>Recent projects</h2>
+			<!-- 	<div class="project">
+					<h4><a target="_blank" href="http://sabatile.co">Saba Tiles</a></h4>
+					<p>
+						Saba Tiles is an online tile distributor that ships tiles worldwide.
+					</p>
+				</div> -->
+				<div class="project">
+					<h4><a target="_blank" href="http://rothelowman.com">Rothelowman</a></h4>
+					<p>
+						Rothelowman is an modern architecture firm. This website showcases their work throughout Australia and Asia, servicing both national and international clients.
+					</p>
+				</div>
+				<div class="project">
+					<h4><a target="_blank" href="https://iconnectfinancial.com.au">iConnect Financial</a></h4>
+					<p>
+						iConnect financial is a website that showcases local brokers that find tailored loans to suit local clients.
+					</p>
+				</div>
+				<div class="project">
+					<h4><a target="_blank" href="http://bingefest.sydneyoperahouse.com">Bingefest</a></h4>
+					<p>
+						Bingefest is a festival landing page for the Sydney Opera House. The festival features Shia LaBeouf, Dan Harmon and others.
+					</p>
+				</div>
+				<div class="project">
+					<h4><a target="_blank" href="http://www.the5th.co">The 5th</a></h4>
+					<p>
+						The 5th.co is a fashion lifestyle brand that sells watches, bags and glasses on the 5th of every month for 5 days.
+					</p>
+				</div>
+				<div class="project">
+					<h4><a target="_blank" href="http://joelbrewster.com/zero-player">Zero Player - Online</a></h4>
+					<h4><a target="_blank" href="https://github.com/joelbrewster/zero-player-app/releases/download/0.1/zero-player.zip">Zero Player - Mac OS App</a></h4>
+					<p>
+						This app is an audio interface that creates random melodies and chords from cellular automation patterns. A user can interact with the app via a monome (OSC device), computer keyboard or with just the mouse.
+						It can be used online or via a download as an electron app
+					</p>
+				</div>
+			</div>
+			<!-- <div class="container-bottom">
+				<h2>Skills</h2>
+				<div>
+					<p>
+						HTML,
+						JavaScript,
+						jQuery,
+						CSS,
+						SASS,
+						PHP,
+						Wordpress,
+						CraftCMS,
+						Gulp,
+						Git,
+						Bitbucket,
+						Github,
+						Vim,
+						Mac OS,
+						Linux,
+						Node,
+						Ruby,
+						Rails,
+						AJAX,
+						React.
+					</p>
+				</div>
+			</div> -->
+		</section>
+	</div>
+</body>
 </html>
