@@ -113,4 +113,54 @@ body.loaded .wave:hover {
 	cursor: all-scroll;
 	z-index: 1;
 }
-
+@media (max-width: 768px) {
+	.container {
+		width: auto;
+		margin: 40px;
+	}
+	.wave {
+		display: none;
+	}
+}
+@media (max-width: 500px) {
+	body {
+		text-align: center;
+		margin: 0 20px;
+	}
+	.container {
+  		width: auto;
+  		padding-bottom: 80px;
+  		margin: auto;
+	}
+	.profile-image {
+		width: 60%;
+		height: 60%;
+		top: -410px;
+		left: 100px;
+	}
+	.wave {
+		top: 250px;
+		left: 50px;
+	}
+	section {
+		margin: 0;
+		padding: 0;
+	}
+}
+@media (max-width: 400px) {
+	.wave {
+		display: none;
+	}
+	.profile-image {
+		top: -450px;
+		left: 60px;
+	}
+}
+@media (max-width: 350px) {
+.profile-image {
+		width: 70%;
+		height: 70%;
+		top: -620px;
+		left: 50px;
+	}
+}
