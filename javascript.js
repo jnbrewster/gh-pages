@@ -1,7 +1,7 @@
 window.onload = function () {
     $('body').flowtype({
-        minFont : 12,
-        maxFont : 18
+        minFont : 14,
+        maxFont : 24
     });
 
     document.body.className += " loaded";

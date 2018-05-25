@@ -19,7 +19,7 @@ body.loaded {
 .container {
     margin: auto;
     width:auto;
-    max-width: 600px;
+    max-width: 800px;
 }
 
 .object-container {
@@ -31,7 +31,7 @@ body.loaded {
 
 .object-container .profile-image {
     max-width: 320px;
-    left: 20%;
+    left: 25%;
     transform: translateX(-20%);
 }
 
