@@ -73,7 +73,6 @@ h1,h2,h3,h4,h5,h6,p {
 h1 {
     font-family: 'Barlow Condensed', sans-serif;
     color: #040404;
-    /* font-size: 46px; */
     font-weight: 500;
     margin: 1rem 0;
     transition: 0.5s;
@@ -93,7 +92,7 @@ h3 {
     margin: 10px 0 20px;
 }
 
-a {
+h3 a {
     font-family: 'Barlow Condensed', sans-serif;
     color: #0000FF;
     line-height: 1.5;
@@ -104,7 +103,18 @@ a {
     transition: 0.4s
 }
 
+a {
+    color: #0000FF;
+    padding-bottom: 1px;
+    transition: 0.4s;
+    font-size: 1em;
+}
+
 a:hover {
+    padding-bottom: 0px;
+}
+
+h3 a:hover {
     padding-bottom: 1px;
 }
 
