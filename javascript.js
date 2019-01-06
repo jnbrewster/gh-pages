@@ -11,6 +11,7 @@ window.onload = function() {
   new Vivus('my-svg', {
     duration: 4000,
   })
+
   $('#swap').hover(
     function() {
       $(this).text('pizza')
