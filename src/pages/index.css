@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css?family=Rasa');
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed');
+html {
+	font-family: 'Roboto', sans-serif;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #EEE;
+	color: #040404;
+	padding: 1rem .5rem 2rem;
+	margin: 0;
+	/* font-size: 22px; */
+	font-size: calc(12px + .5vw);
+	min-width: 320px;
+	transition: .4s;
+	font-family: 'Rasa', serif;
+}
+.container {
+	margin: 0 auto;
+	padding: 4rem 0;
+	width: auto;
+	max-width: 800px;
+}
+.object-container {
+	height: 365px;
+	margin: 2rem auto 0;
+	min-width: 360px;
+	position: relative;
+}
+.object-container .profile-image {
+	max-width: 320px;
+	left: 25%;
+	transform: translateX(-20%);
+}
+.profile-image {
+	position: absolute;
+}
+.profile-image-lines {
+	transition: 6s;
+	opacity: 1;
+	-webkit-animation: fadeOut 5s 1;
+	/* Safari 4+ */
+	-moz-animation: fadeOut 5s 1;
+	/* Fx 5+ */
+	-o-animation: fadeOut 5s 1;
+	/* Opera 12+ */
+	animation: fadeOut 5s 1;
+	/* IE 10+ */
+}
+@keyframes fadeOut {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: .1;
+	}
+}
+@-moz-keyframes fadeOut {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: .1;
+	}
+}
+@-webkit-keyframes fadeOut {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: .1;
+	}
+}
+.profile-image-solid {
+	transition: 8s;
+	opacity: 1;
+	z-index: 0;
+	color: #F4F4F4;
+	transition: 3s;
+	-webkit-animation: fadeIn 5s 1;
+	/* Safari 4+ */
+	-moz-animation: fadeIn 5s 1;
+	/* Fx 5+ */
+	-o-animation: fadeIn 5s 1;
+	/* Opera 12+ */
+	animation: fadeIn 5s 1;
+	/* IE 10+ */
+}
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@-moz-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@-webkit-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+.content-container {
+	padding: 1.25rem 1rem;
+	overflow: none;
+	font-weight: 400;
+	z-index: 2;
+}
+section {
+	padding-top: .75em;
+	padding-bottom: .75em;
+}
+.project {
+	padding-bottom: .75em;
+}
+.content-container .container-top {
+	padding-bottom: 1rem;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Barlow Condensed', sans-serif;
+	line-height: 1.3;
+}
+h1 {
+	font-size: 2.5em;
+}
+h2 {
+	font-size: 2.2em;
+}
+h3 {
+	font-size: 1.5em;
+}
+p, a {
+	font-size: 1.25em;
+}
+h1 {
+	color: #040404;
+	font-weight: 500;
+	margin: 1rem 0;
+	transition: 0.5s;
+}
+h2 {
+	color: #040404;
+	font-weight: 500;
+	margin: 30px 0 20px;
+}
+h3 {
+	color: #040404;
+	font-weight: 500;
+	margin: 15px 0 20px;
+}
+h3 a {
+	font-family: 'Barlow Condensed', sans-serif;
+	color: #0000FF;
+	line-height: 1.5;
+	text-decoration: none;
+	border-bottom: 3px solid #0000FF;
+	padding-bottom: 3px;
+	padding-right: 1%;
+	transition: 0.4s;
+	font-weight: 600;
+}
+a {
+	color: #0000FF;
+	padding-bottom: 1px;
+	transition: 0.4s;
+	font-size: 1em;
+}
+a:hover {
+	padding-bottom: 0px;
+}
+h3 a:hover {
+	padding-bottom: 1px;
+}
+p {
+	padding-bottom: 3px;
+}
